@@ -1,6 +1,6 @@
-[![Unit tests](https://github.com/jriverosesma/python-project/actions/workflows/unit_tests.yaml/badge.svg)](https://github.com/jriverosesma/python-project/actions/workflows/unit_tests.yaml)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/jriverosesma/python-project?include_prereleases&label=latest%20release&color=blue)](https://github.com/jriverosesma/python-project/releases)
-[![PyPI version](https://img.shields.io/pypi/v/python-project.svg?color=blue)](https://pypi.org/project/python-project/)
+[![Unit tests](https://github.com/jriverosesma/python-project-ruff/actions/workflows/unit_tests.yaml/badge.svg)](https://github.com/jriverosesma/python-project-ruff/actions/workflows/unit_tests.yaml)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/jriverosesma/python-project-ruff?include_prereleases&label=latest%20release&color=blue)](https://github.com/jriverosesma/python-project-ruff/releases)
+[![PyPI version](https://img.shields.io/pypi/v/python-project-ruff.svg?color=blue)](https://pypi.org/project/python-project-ruff/)
 
 # Python Project Template
 
