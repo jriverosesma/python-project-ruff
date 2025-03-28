@@ -4,7 +4,7 @@
 
 # Python Project Template
 
-*Python Project Template: Simple and effective*
+*Python Project Template: Simple and modern*
 ________________________________________________________
 
 ## Table of contents
@@ -16,7 +16,9 @@ ________________________________________________________
 
 ## 1. Overview
 
-This is a simple and effective Python project template.
+This is a simple and modern Python project template.
+
+It uses `ruff` for ultra-fast formatting, linting and import sorting instead of `black`, `flake8` and `isort` respectively. 
 
 ## 2. Installation
 
