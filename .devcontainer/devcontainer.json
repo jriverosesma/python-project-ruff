@@ -1,0 +1,23 @@
+{
+    "name": "My Package Development Environment",
+    "dockerFile": "../Dockerfile",
+    "workspaceFolder": "/app/${localWorkspaceFolderBasename}",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/app/${localWorkspaceFolderBasename},type=bind",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "ms-python.black-formatter",
+                "python.defaultInterpreterPath": "/opt/conda/envs/my-package/bin/python"
+            },
+            "extensions": [
+                "GitHub.copilot",
+                "ms-python.black-formatter",
+                "ms-python.isort",
+                "ms-python.python",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "postCreateCommand": "/opt/conda/envs/my-package/bin/pip install -e .[dev] && /opt/conda/envs/my-package/bin/pre-commit install && conda init"
+}

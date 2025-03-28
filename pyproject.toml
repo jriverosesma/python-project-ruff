@@ -1,0 +1,80 @@
+[project]
+name = "my-package"
+version = "0.1.0"
+description = "Simple and effective Python project template"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = ["dino", "chrome", "bot", "game", "automatic"]
+authors = [
+  { name = "Juan Rivero Sesma", email = "jriverosesma@gmail.com" }
+]
+include = ["NOTICES", "LICENSE", "CHANGELOG.md"]
+classifiers = [
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jriverosesma/python-project"
+"Issue Tracker" = "https://github.com/jriverosesma/python-project/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[project.optional-dependencies]
+dev = [
+  "black>=25.1,<26.0",
+  "isort>=6.0,<7.0",
+  "flake8>=7.1,<8.0",
+  "bumpver>=2024.1130,<2025.0",
+  "pre-commit>=4.2.0,<5.0.0",
+  "pip-licenses>=5.0.0,<6.0.0",
+  "pytest>=8.3,<9.0",
+  "pytest-mock>=3.14,<4.0",
+  "pytest-sugar>=1.0,<2.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["my_package"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my_package_script = "my_package.main:main"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = ["my_package"]
+import_heading_firstparty = "My Package"
+
+[tool.bumpver]
+current_version = "0.1.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit          = true
+tag             = true
+push            = true
+commit_message  = "Bump version: {old_version} → {new_version}"
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    '^current_version = "{version}"$',
+    '^version = "{version}"$',
+]
+"my_package/__init__.py" = [
+    '^__version__ = "{version}"$',
+]
+
+[tool.pytest.ini_options]
+minversion = "8.3"
+markers = [
+    "slow: Slow tests",
+    "failing: Tests which need to be fixed",
+]
