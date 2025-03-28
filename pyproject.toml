@@ -5,7 +5,7 @@ description = "Simple and modern Python project template using Ruff"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-keywords = ["dino", "chrome", "bot", "game", "automatic"]
+keywords = ["python", "project", "template", "ruff", "modern"]
 authors = [
   { name = "Juan Rivero Sesma", email = "jriverosesma@gmail.com" }
 ]
@@ -17,8 +17,8 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/jriverosesma/python-project"
-"Issue Tracker" = "https://github.com/jriverosesma/python-project/issues"
+"Homepage" = "https://github.com/jriverosesma/python-project-ruff"
+"Issue Tracker" = "https://github.com/jriverosesma/python-project-ruff/issues"
 
 [tool.poetry.dependencies]
 python = "^3.10"
